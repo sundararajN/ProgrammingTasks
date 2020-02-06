@@ -1,0 +1,42 @@
+                                        ########################## QUESTION ############################
+
+For the following SQL statement, what is wrong with it and how would you fix it:
+
+-- Question:
+SELECT UserId, AVG(Total) AS AvgOrderTotal
+FROM Invoices
+HAVING COUNT(OrderId) >= 1
+
+                                         ############################# SOLUTION ##########################
+##SQL CODE
+
+SELECT UserId, AVG(Total) AS AvgOrderTotal
+FROM Invoices
+GROUP BY  City/Country/Any grouping variable(categorical variable)
+HAVING COUNT(OrderId) >= 1
+
+                                         ############################ EXPLANATION ##########################
+
+#For the above SQL statement, a GROUP BY clause is required before HAVING.A column which has repetitive categorical rows which are 
+#eligible for grouping like city/country can be grouped accordingly and filtering those shipperIDS with OrderID greater than 1.
+#Since OrderId is present, A simple inner join could be done to retrieve grouping variables like shipperID and to identify and 
+#answer questions like “How many or list the number of users who have registers more than 10 orders for each country/city/ShipperId ?”.
+
+                                      ####################### ALTERNATIVE SOLUTION ########################
+                                            
+SELECT Invoices.UserId, AVG(Invoices.Total) AS AvgOrderTotal
+FROM (Invoices
+FULL JOIN Orders ON Invoices.OrderId = Orders. OrderId)
+GROUP BY  ShipperID
+HAVING COUNT(OrderId) >= 1
+
+Or
+
+#The invoice data will have customerID which is a primary key in customers data table and could be joined and grouped by 
+#city/country and questions such as the number of customers/users having orderID according to each country could be determined.
+
+SELECT Invoices.UserId, AVG(Invoices.Total) AS AvgOrderTotal
+FROM (Invoices
+FULL JOIN Customer ON Invoices.CustomerId = Customer.CustomerId)
+GROUP BY  Country/City
+HAVING COUNT(OrderId) >= 1
