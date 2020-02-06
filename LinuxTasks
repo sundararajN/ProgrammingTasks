@@ -1,0 +1,17 @@
+Linux:
+
+1)	ls –alt
+    ls –alt is a linux command utility option that list all the files including the hidden files in the current directory in  
+    long format consisting of file permission, index number, owners name, group name, file size, modification date & time for recent 
+    timestamps, date & year for non-recent timestamps and file names sorted according to their most recent timestamps.
+
+2)	 find . -name "Run*.txt" -type f is the linux command to list files beginning with Run and 
+     ending with .txt in a directory and its sub-directories.
+     
+3)	cat exampleFile1.txt >> exampleFile2.txt is the linux command to append the contents of exampleFile1.txt to exampleFile2.txt
+
+4)	sort exampleFile1.txt  >> exampleFile2.txt is the linux command to sort the contents of 'exampleFile1' and redirect the sorted 
+    content to 'exampleFile2.txt' in one line using the pipe operator.
+    
+5)	Find and grep linux command can be used to find specific files and grep by means of pattern matching,regular 
+    expressions can be used for text patterns in Linux.
