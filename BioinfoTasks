@@ -1,0 +1,4 @@
+1) ls -l -R | grep "\.fastq"
+
+##Explanation: This command line options finds all fastq files in the directory and its subdirectories in a long format 
+listing the permission,file size.
