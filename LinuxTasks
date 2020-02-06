@@ -1,17 +1,32 @@
 Linux:
 
-1)	ls –alt
+1)	What does ls -alt do?
+
+    ls –alt
     ls –alt is a linux command utility option that list all the files including the hidden files in the current directory in  
     long format consisting of file permission, index number, owners name, group name, file size, modification date & time for recent 
     timestamps, date & year for non-recent timestamps and file names sorted according to their most recent timestamps.
 
-2)	 find . -name "Run*.txt" -type f is the linux command to list files beginning with Run and 
+2)	 What command would you use to list all files starting with 'Run' and ending with '.txt' in a directory and all of its subdirectories?
+
+     #CODE: find . -name "Run*.txt" -type f 
+     is the linux command to list files beginning with Run and 
      ending with .txt in a directory and its sub-directories.
      
-3)	cat exampleFile1.txt >> exampleFile2.txt is the linux command to append the contents of exampleFile1.txt to exampleFile2.txt
+3)	How would you append the contents of 'exampleFile1.txt' to 'exampleFile2.txt'?
 
-4)	sort exampleFile1.txt  >> exampleFile2.txt is the linux command to sort the contents of 'exampleFile1' and redirect the sorted 
+      #CODE: cat exampleFile1.txt >> exampleFile2.txt 
+      is the linux command to append the contents of exampleFile1.txt to exampleFile2.txt
+
+4)	How would you (1) sort the contents of 'exampleFile1' and (2) redirect the sorted content to 'exampleFile2.txt' 
+    in one line using the pipe operator?
+    
+    #CODE: sort exampleFile1.txt  >> exampleFile2.txt 
+    
+    is the linux command to sort the contents of 'exampleFile1' and redirect the sorted 
     content to 'exampleFile2.txt' in one line using the pipe operator.
     
-5)	Find and grep linux command can be used to find specific files and grep by means of pattern matching,regular 
+5)	Which commands would you use to find files whose name match a certain pattern, and to find files containing a certain text?
+
+    Find and grep linux command can be used to find specific files and grep by means of pattern matching,regular 
     expressions can be used for text patterns in Linux.
