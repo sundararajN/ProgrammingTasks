@@ -1,4 +1,4 @@
-# ProgrammingTasks
+# For R
 
 # Rmd File can be executed by the following options:
 # Run option in the right hand side
