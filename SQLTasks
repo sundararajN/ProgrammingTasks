@@ -32,7 +32,6 @@ HAVING COUNT(OrderId) >= 1
 
 Or
 
-
 #The invoice data will have customerID which is a primary key in customers data table and could be joined and grouped by 
 #city/country and questions such as the number of customers/users having orderID according to each country could be determined.
 
