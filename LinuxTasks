@@ -15,8 +15,8 @@ Linux:
      
 3)	How would you append the contents of 'exampleFile1.txt' to 'exampleFile2.txt'?
 
-      #CODE: cat exampleFile1.txt >> exampleFile2.txt 
-      is the linux command to append the contents of exampleFile1.txt to exampleFile2.txt
+     #CODE: cat exampleFile1.txt >> exampleFile2.txt 
+     is the linux command to append the contents of exampleFile1.txt to exampleFile2.txt
 
 4)	How would you (1) sort the contents of 'exampleFile1' and (2) redirect the sorted content to 'exampleFile2.txt' 
     in one line using the pipe operator?
